@@ -1,0 +1,138 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+#header.on {
+    background: var(--w-color);
+}
+
+#header .hd_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: height 0.4s;
+}
+
+
+#header h1 a {
+    display: flex;
+}
+
+#header h1 a img {
+    height: 4rem;
+}
+
+#header.on h1 a img:nth-child(2) {
+    filter: invert();
+}
+
+#header .gnb {}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 7.2rem;
+}
+
+#header .gnb>ul>li>a {
+    display: block;
+    line-height: 12rem;
+    font-size: 1.7rem;
+    color: var(--w-color);
+
+    transition: 0.4s;
+
+}
+
+#header.on .gnb>ul>li>a {
+    line-height: 8rem;
+}
+
+#header.on .gnb>ul>li>a {
+    color: var(--body-color);
+}
+
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .gnb>ul>li ul {
+    background: var(--w-color);
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -24px);
+    width: 20rem;
+    padding: 1rem 0;
+
+    border-radius: 12px;
+    border: 1px solid var(--line-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.4s;
+}
+
+#header .gnb>ul>li ul a {
+    display: block;
+    line-height: 4rem;
+    text-align: center;
+}
+
+#header .gnb>ul>li ul a:hover {
+    color: var(--primary-color);
+}
+
+#header .gnb>ul>li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -16px);
+}
+
+#header .utils {
+    display: flex;
+    gap: 4rem;
+}
+
+#header .utils a {
+    position: relative;
+    font-size: 1.4rem;
+    color: var(--w-color);
+}
+
+#header .utils a~a::before {
+    content: "";
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    width: 2px;
+    height: 2px;
+    background: var(--w-color);
+
+    transform: translate(-50%, -50%);
+}
+
+#header.on .utils a~a::before {
+    background: var(--body-color);
+}
+
+#header.on .utils a {
+    color: var(--body-color);
+}
+
+.main_visual {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    background: url(../images/img_visual01.jpg);
+}
