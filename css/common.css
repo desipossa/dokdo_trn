@@ -53,6 +53,11 @@ body {
     gap: var(--gap-size);
 }
 
+.fx>* {
+    flex: 1;
+    min-width: 0;
+}
+
 @media (max-width: 1440px) {
     .inner {
         margin: 0 15px;
@@ -111,4 +116,12 @@ body {
     margin-left: 16px;
     background: url(../images/arrow-up-right.svg) no-repeat center center/cover;
     vertical-align: -6px;
+}
+
+.btn.w::after {
+    background: url(../images/arrow-up-right-c.svg) no-repeat center center/cover;
+}
+
+.btn.w:hover::after {
+    background: url(../images/arrow-up-right.svg) no-repeat center center/cover;
 }

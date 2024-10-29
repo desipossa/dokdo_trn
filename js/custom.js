@@ -21,5 +21,11 @@ $(function () {
             nextEl: '.main_visual .arrows .next',
             prevEl: '.main_visual .arrows .prev',
         },
+    });
+
+
+    const mainNoticeSlide = new Swiper('.main_notice_slide', {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
     })
 })
