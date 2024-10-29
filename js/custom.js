@@ -8,4 +8,18 @@ $(function () {
             $('#header').removeClass('on')
         }
     })
+});
+
+
+$(function () {
+    const mainVisualSlide = new Swiper('.main_visual_slide', {
+        loop: true,
+        parallax: true,
+        speed: 1000,
+
+        navigation: {
+            nextEl: '.main_visual .arrows .next',
+            prevEl: '.main_visual .arrows .prev',
+        },
+    })
 })
