@@ -674,13 +674,13 @@
 
 #footer .footer_top .slg {
     padding-top: 20rem;
-    max-width: 40rem;
+    max-width: 80rem;
 
     text-align: center;
 }
 
 #footer .footer_top .slg figure {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 #footer .footer_top .slg img {
@@ -688,8 +688,90 @@
 }
 
 #footer .footer_top .slg strong {
+    position: relative;
     display: inline-block;
     white-space: nowrap;
     font-size: 3.2rem;
     font-weight: 600;
+
+    line-height: 4.4rem;
+
+
+}
+
+#footer .footer_top .slg strong::after {
+    content: "“ 경상북도 울릉읍 독도리 1-96 ”";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0;
+    overflow: hidden;
+
+    border-right: 1px solid var(--w-color);
+
+    color: var(--w-color);
+
+    animation: txtAni 8s steps(21) infinite;
+}
+
+@keyframes txtAni {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+#footer .footer_bottom {
+    padding: 8rem 0;
+}
+
+#footer .footer_bottom .customer {
+    display: flex;
+    gap: 4rem;
+
+    margin-bottom: 0.8rem;
+}
+
+#footer .footer_bottom .customer li {
+    position: relative;
+}
+
+#footer .footer_bottom .customer li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -2rem;
+
+    transform: translate(-50%, -50%);
+
+    width: 4px;
+    height: 4px;
+
+    background: var(--w-color);
+    border-radius: 50%;
+}
+
+#footer .footer_bottom .customer li a {
+    color: var(--w-color);
+    font-size: 1.4rem;
+}
+
+#footer .footer_bottom p {
+    color: var(--w-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+#footer .footer_bottom .copy {
+    font-size: 1.2rem;
+    color: var(--line-color);
 }

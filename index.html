@@ -13,13 +13,17 @@
     <link rel="stylesheet" href="./css/common.css">
 
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 
 
     <script src="./js/jquery-1.12.4.min.js"></script>
 
     <script src="./js/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="./js/custom.js"></script>
 </head>
@@ -143,7 +147,7 @@
             <section class="main_info default">
                 <h2 class="blind">메인콘텐츠</h2>
                 <div class="inner fx info_wrap">
-                    <div class="dokdo bg">
+                    <div class="dokdo bg" data-aos="fade-up">
                         <h3>독도 바로알기</h3>
                         <p>
                             독도의 역사를 배우고, 자연을 체험하며 독도영토주권,<br />
@@ -152,7 +156,7 @@
 
                         <a href="" class="btn w">바로가기</a>
                     </div>
-                    <div class="view">
+                    <div class="view" data-aos="fade-up" data-aos-delay="500">
                         <h3>관람안내</h3>
                         <div class="contect_area">
                             <i>
@@ -202,7 +206,7 @@
 
 
             <section class="main_notice default">
-                <div class="inner notice_wrap">
+                <div class="inner notice_wrap" data-aos="fade-up">
                     <div class="title">
                         <h2>공지사항</h2>
                         <p>
@@ -299,7 +303,7 @@
 
             <section class="main_banner default">
                 <h2 class="blind">메인베너</h2>
-                <div class="inner main_banner_wrap">
+                <div class="inner main_banner_wrap" data-aos="fade-up">
                     <a href="" class="left">
                         <div class="tit">
                             <h3>체험존 안내</h3>
@@ -333,7 +337,7 @@
                     <figure>
                         <img src="./images/img_logo2.svg" alt="">
                     </figure>
-                    <strong class="serif">경상북도 울릉읍 독도리 1-96</strong>
+                    <strong class="serif">“ 경상북도 울릉읍 독도리 1-96 ”</strong>
                 </div>
                 <div class="point_map">
                     <span class="west point serif">서도</span>
@@ -341,7 +345,21 @@
                 </div>
             </div>
             <div class="footer_bottom">
-                adad
+                <div class="inner">
+                    <address>
+                        <ul class="customer">
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">개인정보취급방침</a></li>
+                            <li><a href="">이메일주소무단수집거부</a></li>
+                        </ul>
+                        <p>주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층 독도체험관
+                            <strong>문의전화. 044-999-6393</strong>
+                        </p>
+                        <div class="copy">
+                            &copy; 2022 Dokdo Exhibitonon All rights reserved .
+                        </div>
+                    </address>
+                </div>
             </div>
         </footer>
     </div>
