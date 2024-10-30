@@ -358,7 +358,6 @@
 
 .main_info .info_wrap .dokdo p {
     margin-bottom: 8rem;
-    opacity: 0.6;
 }
 
 .main_info .info_wrap .view h3 {
@@ -402,7 +401,6 @@
 
 .main_info .info_wrap .view .table td {
     padding-bottom: 16px;
-    opacity: 0.7;
 }
 
 .main_info .info_wrap .view .table td p {
@@ -450,6 +448,27 @@
 .main_notice .notice_wrap .title {
     position: relative;
     flex: 1;
+
+    padding-top: 3.2rem;
+}
+
+.main_notice .notice_wrap .title h2 {
+    margin-bottom: 4rem;
+}
+
+.main_notice .notice_wrap .title .arrows {
+    margin-top: 8rem;
+
+    display: flex;
+    gap: 8px;
+}
+
+.main_notice .notice_wrap .title .arrows button {
+    background: var(--body-color);
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 50%;
 }
 
 .main_notice .notice_wrap .notice {

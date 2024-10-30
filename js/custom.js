@@ -27,5 +27,11 @@ $(function () {
     const mainNoticeSlide = new Swiper('.main_notice_slide', {
         slidesPerView: 2.5,
         spaceBetween: 30,
+        navigation: {
+            nextEl: '.main_notice .arrows .next',
+            prevEl: '.main_notice .arrows .prev',
+        },
+
+
     })
 })

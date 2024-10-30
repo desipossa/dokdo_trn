@@ -43,6 +43,10 @@ body {
     font-weight: 700;
 }
 
+.default p {
+    opacity: 0.6;
+}
+
 .bg {
     background: var(--background-color);
 }
