@@ -50,6 +50,17 @@ p {
     line-height: 1.5;
 }
 
+em,
+i,
+address {
+    font-style: normal;
+}
+
+strong,
+b {
+    font-weight: normal;
+}
+
 .blind {
     position: absolute;
     width: 1px;
@@ -78,4 +89,19 @@ p {
 #skip-nav a:focus,
 #skip-nav a:active {
     top: 0;
+}
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis_a {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
