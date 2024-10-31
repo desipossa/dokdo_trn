@@ -645,7 +645,6 @@
 @media (max-width:768px) {
     .main_visual {
         position: relative;
-        overflow: hidden;
     }
 
     .main_visual .main_visual_slide {
