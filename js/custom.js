@@ -25,11 +25,23 @@ $(function () {
 
 
     const mainNoticeSlide = new Swiper('.main_notice_slide', {
-        slidesPerView: 2.5,
+        slidesPerView: 1,
         spaceBetween: 30,
         navigation: {
             nextEl: '.main_notice .arrows .next',
             prevEl: '.main_notice .arrows .prev',
+        },
+
+        pagination: {
+            el: '.main_notice_slide .page',
+            clickable: true,
+        },
+
+        breakpoints: {
+            768: {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+            },
         },
 
 
@@ -58,7 +70,8 @@ $(function () {
 
 $(function () {
     $('#header .moblie_btn').on('click', function () {
-        $('#header .gnb').toggleClass('on')
+        $('#header .gnb').toggleClass('on');
+        $(this).toggleClass('on');
     });
 
     $('#header .gnb>ul>li>a').on('click', function (e) {
@@ -69,6 +82,12 @@ $(function () {
         }
 
     });
+
+    $(window).on('scroll', function () {
+        if ($('#header .gnb').hasClass('on')) {
+            $('#header').removeClass('on')
+        }
+    })
 
     $(window).on('resize', function () {
         $('#header .gnb').removeClass('on');
