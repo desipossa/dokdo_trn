@@ -21,8 +21,6 @@ html {
 body {
     font-size: 1.6rem;
     letter-spacing: -0.025em;
-
-    overflow-x: hidden;
 }
 
 
@@ -38,15 +36,45 @@ body {
 .default h2 {
     font-size: 4rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .default h3 {
     font-size: 3.2rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .default p {
     opacity: 0.6;
+}
+
+@media (max-width:768px) {
+    .default {
+        padding: var(--padding-size) 0;
+    }
+
+    .default h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        white-space: nowrap;
+
+        /*  */
+        font-size: 5vw;
+    }
+
+    .default h3 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        white-space: nowrap;
+
+        /*  */
+        font-size: 6vw;
+    }
+
+    .default p {
+        opacity: 0.6;
+    }
 }
 
 .bg {
