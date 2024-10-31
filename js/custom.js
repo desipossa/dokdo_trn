@@ -53,3 +53,25 @@ $(function () {
 $(function () {
     AOS.init();
 });
+
+// 모바일
+
+$(function () {
+    $('#header .moblie_btn').on('click', function () {
+        $('#header .gnb').toggleClass('on')
+    });
+
+    $('#header .gnb>ul>li>a').on('click', function (e) {
+        if ($('#header .gnb').hasClass('on')) {
+            e.preventDefault();
+            //$('#header .gnb>ul>li ul').slideUp();
+            $(this).next().slideDown().parent().siblings().find('ul').slideUp();
+        }
+
+    });
+
+    $(window).on('resize', function () {
+        $('#header .gnb').removeClass('on');
+        $('#header .gnb>ul>li ul').removeAttr('style')
+    })
+})
